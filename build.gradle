@@ -25,6 +25,10 @@ testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.0.0'
   
   // https://mvnrepository.com/artifact/org.testng/testng
 testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
   
 }
 
