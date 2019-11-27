@@ -4,13 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
 public class GetData {
 
 	public static void main(String[] args) throws Exception 
 
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\EclipseWorkspace\\chromedriver v78\\chromedriver.exe"); 
+		
+		//Response resp =RestAssured.get("http://dummy.restapiexample.com/api/v1/employees");
+		//System.out.println(resp.getStatusCode());
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\28693\\Desktop\\EclipseWorkSpace\\chromedriver_win32\\chromedriver.exe"); 
 		
 		   WebDriver driver = new ChromeDriver();
 		
@@ -20,8 +27,8 @@ public class GetData {
 		    driver.get("http://www.google.com/");
 		    
 		    driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("Selenium  abdjhdsgksjhgk");
-		    driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
-		    Thread.sleep(5000);	
+		   driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
+		  Thread.sleep(5000);	
 		    driver.quit();
 	        System.out.println("This is a test line");
 		}
