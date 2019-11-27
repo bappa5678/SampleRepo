@@ -26,11 +26,11 @@ public class GetData {
 		   driver.manage().window().maximize();  
 		    driver.get("http://www.google.com/");
 		    
-		    driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("Selenium  abdjhdsgksjhgk");
+	    driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("Selenium  abdjhdsgksjhgk");
 		   driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
 		  Thread.sleep(5000);	
 		    driver.quit();
-	        System.out.println("This is a test line");
+       System.out.println("This is a test line");
 		}
 		
 		catch(Exception e) {
