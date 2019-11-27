@@ -43,7 +43,10 @@ public class GetData {
 		    
 	    driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("Selenium  abdjhdsgksjhgk");
 		   driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
-		  Thread.sleep(5000);	
+		  Thread.sleep(5000);
+		  
+		  
+		  System.out.println("After browser Launch");
 		    driver.quit();
        System.out.println("This is a test line");
 		}
