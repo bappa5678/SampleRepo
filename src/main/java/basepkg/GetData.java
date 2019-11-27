@@ -17,9 +17,11 @@ public class GetData {
 		//Response resp =RestAssured.get("http://dummy.restapiexample.com/api/v1/employees");
 		//System.out.println(resp.getStatusCode());
 		
+		System.out.println("This is before webdriver");  
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\28693\\Desktop\\EclipseWorkSpace\\chromedriver_win32\\chromedriver.exe"); 
 		
-		   WebDriver driver = new ChromeDriver();
+		
+		WebDriver driver = new ChromeDriver();
 		
 		try {
 		
